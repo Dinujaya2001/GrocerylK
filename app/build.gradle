@@ -1,0 +1,66 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+}
+
+android {
+    namespace 'lk.tharaka.grocerylk'
+    compileSdk {
+        version = release(36)
+    }
+    buildFeatures {
+        buildConfig true
+
+    }
+
+
+    defaultConfig {
+        applicationId "lk.tharaka.grocerylk"
+        minSdk 28
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.firebase.auth
+    implementation libs.credentials
+    implementation libs.credentials.play.services.auth
+    implementation libs.googleid
+    implementation libs.firebase.database
+    implementation libs.firebase.firestore
+    implementation libs.firebase.storage
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation libs.roundedimageview
+    implementation libs.glide
+    implementation libs.circleimageview
+    implementation libs.payhere.android.sdk
+    implementation libs.gson
+    implementation libs.play.services.location
+    implementation libs.play.services.maps
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+
+
+
+}

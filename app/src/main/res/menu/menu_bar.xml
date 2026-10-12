@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_menuhome"
+        android:title="Home"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile"/>
+    <item
+        android:id="@+id/nav_category"
+        android:icon="@drawable/ic_baseline_category_24"
+        android:title="Category"/>
+    <item
+        android:id="@+id/nav_offers"
+        android:icon="@drawable/ic_baseline_local_offer_24"
+        android:title="Special Offers"/>
+    <item
+        android:id="@+id/nav_new_products"
+        android:icon="@drawable/autorenew"
+        android:title="New Products"/>
+    <item
+        android:id="@+id/nav_my_orders"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="My Orders"/>
+    <item
+        android:id="@+id/nav_my_carts"
+        android:icon="@drawable/mycart"
+        android:title="My cart"/>
+    <item
+        android:id="@+id/nav_my_location"
+        android:icon="@drawable/outline_add_location_24"
+        android:title="Location"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_baseline_loginout"
+        android:title="Logout" />
+
+</group>
+</menu>
